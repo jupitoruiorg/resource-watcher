@@ -85,7 +85,7 @@ class Watcher {
 	 * @param  \Closure  $callback
 	 * @return void
 	 */
-	public function startWatch($interval = 1000000, $timeout = null, Closure $callback = null)
+	public function startWatch($interval = 1000000, $timeout = null, ?Closure $callback = null)
 	{
 		$this->watching = true;
 
@@ -119,7 +119,7 @@ class Watcher {
 	 * @param  \Closure  $callback
 	 * @return void
 	 */
-	public function start($interval = 1000000, $timeout = null, Closure $callback = null)
+	public function start($interval = 1000000, $timeout = null, ?Closure $callback = null)
 	{
 		$this->startWatch($interval, $timeout, $callback);
 	}
